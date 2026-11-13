@@ -61,11 +61,18 @@ const BANNED_TYPES = [
   "n8n-nodes-base.httpRequest",
   "@n8n/n8n-nodes-langchain.toolHttpRequest",
 ];
+/**
+ * Module scopes. The estate registry serves `@nonagentic/*`; the public npm
+ * builds are `@nonagenticai/*` (the only organisation we own on npmjs). A tool
+ * node carries whichever scope its package was installed from, so both count —
+ * a flow linted on a public install must not look like it uses a foreign tool.
+ */
+const MODULE_SCOPES = ["@nonagentic/", "@nonagenticai/"] as const;
 /** Module types whose every call must carry a project (house rule). */
-const PROJECT_SCOPED_TYPE_PREFIXES = [
-  "@nonagentic/n8n-nodes-coding.",
-  "@nonagentic/n8n-nodes-artifacts.",
-];
+const PROJECT_SCOPED_TYPE_PREFIXES = MODULE_SCOPES.flatMap((s) => [
+  `${s}n8n-nodes-coding.`,
+  `${s}n8n-nodes-artifacts.`,
+]);
 const BANNED_STRINGS: Array<[RegExp, string]> = [
   [/\$env\b/, "uses $env"],
   [/svc\.cluster\.local/, "addresses cluster DNS (svc.cluster.local)"],
@@ -92,7 +99,7 @@ const TOOL_WORKFLOW_TYPE = "@n8n/n8n-nodes-langchain.toolWorkflow";
 function isAllowedToolType(type: string | undefined): boolean {
   if (!type) return false;
   if (type === TOOL_WORKFLOW_TYPE) return true;
-  return type.startsWith("@nonagentic/n8n-nodes-") && type.endsWith("Tool");
+  return MODULE_SCOPES.some((s) => type.startsWith(`${s}n8n-nodes-`)) && type.endsWith("Tool");
 }
 
 export function flowKind(name: unknown): FlowKind {

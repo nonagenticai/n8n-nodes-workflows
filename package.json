@@ -1,6 +1,6 @@
 {
-  "name": "@nonagentic/n8n-nodes-workflows",
-  "version": "0.2.0",
+  "name": "@nonagenticai/n8n-nodes-workflows",
+  "version": "0.2.1",
   "description": "n8n node for managing workflows and executions on a running n8n instance",
   "keywords": [
     "n8n-community-node-package",
