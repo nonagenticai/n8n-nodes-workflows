@@ -2,6 +2,8 @@
 
 [![npm version](https://img.shields.io/npm/v/@nonagentic/n8n-nodes-workflows.svg)](https://www.npmjs.com/package/@nonagentic/n8n-nodes-workflows)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![CI](https://github.com/nonagenticai/n8n-nodes-workflows/actions/workflows/ci.yml/badge.svg)](https://github.com/nonagenticai/n8n-nodes-workflows/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/nonagenticai/n8n-nodes-workflows)](https://github.com/nonagenticai/n8n-nodes-workflows/releases)
 
 An n8n community node for managing the workflows and executions of the **running n8n instance**
 through its Public API — so one workflow can read, check, diff, write, publish and roll back other
@@ -132,6 +134,16 @@ npm test
 ```
 
 `npm run build` writes `dist/`, which is what the `n8n` block in `package.json` points at.
+
+## Security
+
+Report vulnerabilities privately through the repository's Security tab — see
+[`SECURITY.md`](SECURITY.md). Do not open a public issue for a security problem.
+
+## Contributing
+
+Issues and pull requests are welcome. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the
+development commands and the commit conventions. Commits carry DCO sign-off.
 
 ## License
 
