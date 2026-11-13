@@ -38,7 +38,7 @@ export function validateProductionConfig(
   const missing = REQUIRED_IN_PRODUCTION.filter((k) => !env[k]);
   if (missing.length > 0) {
     throw new Error(
-      `[@nonagentic/n8n-nodes-workflows] Missing required env var(s) in ` +
+      `[@nonagenticai/n8n-nodes-workflows] Missing required env var(s) in ` +
         `production: ${missing.join(", ")}. Set them in the n8n deployment ` +
         `manifest and redeploy.`,
     );

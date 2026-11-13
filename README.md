@@ -1,6 +1,6 @@
 # n8n-nodes-workflows
 
-[![npm version](https://img.shields.io/npm/v/@nonagentic/n8n-nodes-workflows.svg)](https://www.npmjs.com/package/@nonagentic/n8n-nodes-workflows)
+[![npm version](https://img.shields.io/npm/v/@nonagenticai/n8n-nodes-workflows.svg)](https://www.npmjs.com/package/@nonagenticai/n8n-nodes-workflows)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![CI](https://github.com/nonagenticai/n8n-nodes-workflows/actions/workflows/ci.yml/badge.svg)](https://github.com/nonagenticai/n8n-nodes-workflows/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/nonagenticai/n8n-nodes-workflows)](https://github.com/nonagenticai/n8n-nodes-workflows/releases)
@@ -52,12 +52,12 @@ version-diff endpoint; both are done here.
 
 ### n8n GUI (recommended)
 
-**Settings → Community Nodes → Install** → `@nonagentic/n8n-nodes-workflows`.
+**Settings → Community Nodes → Install** → `@nonagenticai/n8n-nodes-workflows`.
 
 ### Manual
 
 ```bash
-npm install @nonagentic/n8n-nodes-workflows
+npm install @nonagenticai/n8n-nodes-workflows
 ```
 
 Restart n8n afterwards.
