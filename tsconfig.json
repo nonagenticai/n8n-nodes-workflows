@@ -17,6 +17,7 @@
     "types": ["node"]
   },
   "include": [
+    "index.ts",
     "credentials/**/*",
     "nodes/**/*",
     "helpers/**/*"
