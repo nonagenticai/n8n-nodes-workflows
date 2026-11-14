@@ -1,6 +1,6 @@
 {
   "name": "n8n Workflows Node",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "resources": {
     "workflow": [
       "list",
