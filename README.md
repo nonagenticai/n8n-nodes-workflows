@@ -153,4 +153,4 @@ only licence that applies, and no licence server is involved.
 
 ## License
 
-[Apache-2.0](./LICENSE)
+[Apache-2.0](./LICENSE). This distribution includes a [NOTICE](./NOTICE) file.
